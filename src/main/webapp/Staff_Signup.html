@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Sign Up</title>
+</head>
+<body>
+     
+     <h1>Enter Staff Details</h1>
+     <form action="staff_signup" method="post">
+ 
+         <p>
+            <label>Name</label><br>
+            <input type="text" name="name" placeholder="Enter your name" required>
+         </p>
+
+         <p>
+               <label>Mobile</label><br>
+               <input type="number" name="number" placeholder="Enter mobile number" required>
+         </p>
+
+         <p>
+             <label>Email</label><br>
+             <input type="email" name="email"  placeholder="Enter your Email" required>
+         </p>
+
+         <p>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male" required>Male
+            <input type="radio" name="gender" value="female">Female 
+         </p>
+         
+         <p>
+             <label>DOB</label>
+             <input type="date" name="dob" required><br>
+         </p>
+
+         <p>
+            <label>Password</label><br>
+            <input type="password" name="password" placeholder="Enter password" required>
+         </p>
+
+          <p>
+             <button type="reset">cancel</button> <button type="submit">submit</button>
+          </p>
+     </form>
+    
+</body>
+</html>
