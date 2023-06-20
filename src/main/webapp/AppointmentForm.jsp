@@ -27,13 +27,13 @@ else{
 List<Doctor> list=adb.fetchAvailableDoctors();
 if(list.isEmpty())
 {
-	response.getWriter().print("<h1 style='color:red'>No Doctors are Available</h1>");
-	request.getRequestDispatcher("StaffHome.html").include(request, response);
+	response.getWriter().print("<h1 style='color:red; position:absolute; bottom:33.5rem;'>No Doctors are Available</h1>");
+	request.getRequestDispatcher("Staff_Home.html").include(request, response);
 }
 else{
 %>
 <form action="bookappointment" method="post">
-Patient Id: <input type="text" name="pid" value="<%=pid%>" readonly="readonly"><br>
+Patient Id: <input type="number" name="pid" value="<%=pid%>" readonly="readonly"><br>
 Patient Name: <input type="text" name="pname" value="<%=patient.getName()%>" readonly="readonly"><br>
 Staff Name: <input type="text" name="staffname" value="<%=staff.getName()%>" readonly="readonly"><br>
 Problem:<input type="text" name="problem"><br>

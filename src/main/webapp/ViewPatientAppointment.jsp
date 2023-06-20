@@ -51,7 +51,8 @@
 		<%}%>
 	</table>
 	<br>
-	<a href="fetchallpatient"><button>Back</button></a>
-	<%} %>
+	<%
+	} 
+	%>
 </body>
 </html>

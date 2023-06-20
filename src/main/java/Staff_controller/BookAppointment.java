@@ -52,7 +52,7 @@ public class BookAppointment extends HttpServlet {
 		adb.update(doctor);
 		adb.updatePatient(patient);
 		
-		resp.getWriter().print("<h1>Appointment of "+patient.getName()+" is booked with "+doctor.getName()+" for "+problem+"</h1>");
+		resp.getWriter().print("<h1 style='color:green; position:absolute; bottom:33.5rem'>Appointment of "+patient.getName()+" is booked with Dr. "+doctor.getName()+" for "+problem+"</h1>");
 		req.getRequestDispatcher("Staff_Home.html").include(req, resp);
 	}
 }

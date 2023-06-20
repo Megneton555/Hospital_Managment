@@ -43,7 +43,6 @@
 			}
 		%>
 	</table>
-	<br><br>
-	<a href="Admin_Home.html"><button>Back</button></a>
+	
 </body>
 </html>

@@ -147,10 +147,21 @@ public class AccessDB {
 	}
 
 	public void saveAppointment(Appointment appointment) {
+		   et.begin();
+		   em.persist(appointment);
+		   et.commit();
+		}
+	
+	
+	public void updateAppointment(Appointment appointment) {
 		et.begin();
-		em.persist(appointment);
+		em.merge(appointment);
 		et.commit();
 	}
 	
+	
+	public Appointment fetchAppointment(int id) {
+		return em.find(Appointment.class, id);
+	}
 
 }
